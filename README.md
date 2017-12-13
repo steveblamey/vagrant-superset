@@ -25,6 +25,7 @@ $ cd vagrant-superset
 $ vagrant up
 
 $ vagrant ssh
+$ source env/bin/activate
 $ superset runserver
 ```
 
