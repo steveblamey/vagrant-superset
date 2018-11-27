@@ -1,6 +1,6 @@
 # A Vagrant file and shell provisioner for Apache Superset
 
-Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application.
+[Apache Superset](https://superset.incubator.apache.org) is a modern, enterprise-ready business intelligence web application.
 
 ## Requires
 
@@ -8,6 +8,7 @@ Apache Superset (incubating) is a modern, enterprise-ready business intelligence
 
 ## Features
 
+* Uses ubuntu/bionic64 base box
 * Uses postgresql db back-end
 * Remote connect to postgres db on localhost:4000
 * No demo data loaded
@@ -18,6 +19,7 @@ Apache Superset (incubating) is a modern, enterprise-ready business intelligence
 * Superset db role: superset/superset
 
 ## Make it work
+
 ```
 $ git clone https://github.com/steveblamey/vagrant-superset.git
 
@@ -28,5 +30,4 @@ $ vagrant ssh
 $ source env/bin/activate
 $ superset runserver
 ```
-
-[Apache Superset](https://superset.incubator.apache.org)
+Point your browser to `localhost:8088` and log-in to superset.
