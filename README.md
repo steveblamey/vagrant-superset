@@ -20,6 +20,8 @@
 
 ## Make it work
 
+**Tested with Apache Superset 0.35.1**
+
 ```
 $ git clone https://github.com/steveblamey/vagrant-superset.git
 
@@ -28,6 +30,14 @@ $ vagrant up
 
 $ vagrant ssh
 $ source env/bin/activate
-$ superset runserver
+$ superset run -h 0.0.0.0 -p 8088
 ```
 Point your browser to `localhost:8088` and log-in to superset.
+
+## Load the demo data
+
+If you want to load the demo data instead of connecting to your own datat sources:
+
+```
+$ superset load_examples
+```
